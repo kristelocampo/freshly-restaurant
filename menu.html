@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Freshly Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="./img/images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <img src="./img/images/logo.png" alt="Logo Freshly Restaurant" id="logo">
+        <p class="logo-content">Freshly Restaurant</p>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <p class="content-title">Details of our menus</p>
+            <p>Choose your main course according to you menu</p>
+            <div class="mix-container">
+                <div class="mix-button">
+                    <button type="button" data-filter="all">All</button>
+                    <button type="button" data-filter=".meat">MEAT</button>
+                    <button type="button" data-filter=".vegan">VEGAN</button>
+                    <button type="button" data-filter=".fish">FISH</button>
+                </div>
+                <div class="mix-content menu">
+                    <div class="mix meat" data-order="1">
+                        <img src="./img/menus/meat-01.jpg" alt="meat1">
+                        <img src="./img/menus/meat-02.jpg" alt="meat2">
+                        <img src="./img/menus/meat-03.jpg" alt="meat3">
+                    </div><!--
+                    --><div class="mix vegan" data-order="2">
+                        <img src="./img/menus/vegan-01.jpg" alt="vegan1">
+                        <img src="./img/menus/vegan-02.jpg" alt="vegan2">
+                        <img src="./img/menus/vegan-03.jpg" alt="vegan3">
+                    </div><!--
+                    --><div class="mix fish" data-order="3">
+                        <img src="./img/menus/fish-01.jpg" alt="fish1">
+                        <img src="./img/menus/fish-02.jpg" alt="fish2">
+                        <img src="./img/menus/fish-03.jpg" alt="fish3">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="desert">
+            <p class="content-title"> Deserts</p>
+            <p>Here are the deserts you can choose to finish your meal (included in your meal)</p>
+            <div class="desert-photo menu">
+                <img src="./img/menus/desert-01.jpg" alt="desert1">
+                <img src="./img/menus/desert-02.jpg" alt="desert2">
+                <img src="./img/menus/desert-03.jpg" alt="desert3">
+            </div>
+        </div>
+        <div class="cocktail">
+            <p class="content-title"> Cocktails</p>
+            <p>Soft drinks are included, but if you want you can oreder one of our exellent cocktails(not included in the menu)</p>
+            <div class="cocktails-photo menu">
+                <img src="./img/menus/drink-01.jpg" alt="drink1">
+                <img src="./img/menus/drink-02.jpg" alt="drink2">
+                <img src="./img/menus/drink-03.jpg" alt="drink3">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot1">
+            <div class="col">
+                <p class="foot-title">Opening hours</p>
+                <hr>
+                <ul>
+                    <li>Monday: Closed</li>
+                    <li>Tue-Wed: 9am - 10pm</li>
+                    <li>Thu-Fri: 9am - 10pm</li>
+                    <li>Sat-Sun: 9am - 10pm</li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="foot-title">Contact</p>
+                <hr>
+                <address>
+                    13 Christopher Street<br>
+                    New York<br>
+                    NY 10014-3543<br>
+                </address>
+                <a href="tel:+0120008009999" class="tel">+01 2000 800 9999</a>
+            </div>
+            <div class="col">
+                <p class="foot-title">Social networks</p>
+                <hr>
+                <i class="fab fa-facebook-square" id="fb"><a href="https://www.facebook.com"></a></i>
+                <i class="fab fa-pinterest-square" id="pin"><a href="https://www.pinterest.com"></a></i>
+                <i class="fab fa-instagram-square" id=ins><a href="https://www.instagram.com"></a></i>
+            </div>
+        </div>
+        <div class="foot2">
+            <img src="./logo-3wa.png" alt="3W Academy Logo" id="3w">
+            <p>Ce materiel pédagogique est la propriete de la <a href="3wa.fr">3W Academy</a></p>
+            <p>Cette exercice a été réalisé par Catherine Denos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="vendor/mixitup/mixitup.min.js"></script>
+    <script src="vendor/fancy-box/jquery.fancybox.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.8rem;
+    background: rgb(255, 253, 253);
+    background: linear-gradient(0deg, rgba(255, 253, 253, 0) 95%, rgba(235, 227, 219, 1) 100%);
+
+}
+
+header {
+    text-align: center;
+}
+
+.logo-content,
+.content-title,
+.foot-title {
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-title {
+    font-size: 1.5rem;
+}
+
+.foot2 {
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #444;
+}
+
+.logo-content:before,
+.logo-content:after,
+.content-title:before,
+.content-title:after {
+    content: '\2605';
+    color: red;
+}
+
+nav {
+    background-color: #ebe3db;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 2rem;
+    border-top: .5px solid gray;
+    border-bottom: .5px solid gray;
+    padding: 10px;
+}
+
+nav li:hover {
+    color: white;
+    background-color: #4c4343;
+}
+
+nav li:hover a {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4c4343;
+}
+
+
+#logo {
+    width: 150px;
+}
+
+main {
+    padding: 10px;
+
+}
+
+video {
+    display: block;
+    margin: auto;
+}
+
+.dining-photo {
+    background-color: #ebe3db;
+    text-align: center;
+    padding: 10px;
+}
+
+figure img {
+    width: 100%;
+}
+
+hr {
+    border: dashed 1px white;
+    padding: 0;
+}
+
+.foot1,
+address {
+    background-color: #4c4343;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.tel {
+    text-decoration: none;
+    color: white;
+}
+
+.foot1 ul li {
+    list-style: none;
+}
+
+i {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 1em;
+}
+
+/*menu page*/
+
+.menu {
+    background-color: #ebe3db;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.menu img {
+    width: 50%;
+    padding: 10px;
+}
+
+.mix {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.mix-button {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+button {
+    background-color: #ebe3db;
+    border: none;
+    padding: 20px;
+    margin: 1em;
+}
+
+button:hover {
+    background-color: #950000;
+    color: white;
+}
+
+/*home page*/
+
+.slider img,
+.welcome img {
+    width: 100%;
+}
+
+.menu-list {
+    position: relative;
+    background-color: #ebe3db;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-list img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.price{
+    position: absolute;
+    top: 5%;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.price p{
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    width: 80%;
+    border: 4px white solid;
+    padding: 20%;
+}
+
+
+.menu1:hover img {
+    opacity: .2;
+
+}
+
+.menu1:hover .price{
+    background: rgba(68, 68, 68, 0.65);
+    opacity: 2;
+    
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list hr {
+    border: dashed gray 2px;
+}
+
+.menu-list ul li:before {
+    content: '\2605';
+    color: red;
+    padding: 10px;
+}
+
+.more {
+    background-color: #4c4343;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+}
+form{
+    background-color: #ebe3db;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    width: 50%;
+}
+
+label{
+    display: block;
+    font-size: 2rem;
+    padding: 2px;
+}
+input{
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.r{
+    text-align:center;
+}
+
+.req{
+    width: 80%;
+    height: 200px;
+}
+
+.reserve{
+    background-color: #4c4343;
+    color: white;
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 780px) and (min-width: 680px) {
+    nav ul li {
+        border: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav ul,
+    nav li:hover,
+    li: hover a {
+        padding: 0;
+        margin: 0;
+    }
+    .dining-photo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    figure {
+        width: 35%;
+    }
+    img {
+        align-self: center;
+    }
+    .foot1 {
+        display: flex;
+    }
+    .col {
+        width: 30%;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .foot-title {
+        font-size: 1.5rem;
+        line-height: 2em;
+    }
+    i {
+        display: inline;
+        padding: 10px;
+        margin: 0;
+    }
+    .menu img {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 781px) {
+    header,
+    main {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background: none;
+    }
+
+    header {
+        margin-top: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    nav {
+        margin-left: auto;
+    }
+    nav ul li {
+        border: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #ebe3db;
+    }
+    .logo-content {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 253, 253);
+    }
+    .dining-photo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    figure {
+        width: 30%;
+    }
+    img {
+        align-self: center;
+    }
+    .foot1 {
+        display: flex;
+        justify-content: center;
+    }
+    .col {
+        width: 30%;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .foot-title {
+        font-size: 1.5rem;
+        line-height: 2em;
+    }
+    i {
+        display: inline;
+        padding: 10px;
+        margin: 0;
+    }
+    .menu img {
+        width: 30%;
+    }
+
+}
